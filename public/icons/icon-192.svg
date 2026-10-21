@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="192" height="192">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="vbAmber2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="vbBlue2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="vbWhite2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad2)" />
+  <g transform="translate(256, 256)">
+    <circle r="160" fill="#1e293b" stroke="#0f172a" stroke-width="8" />
+    <path d="M 0 -160 A 160 160 0 0 1 138.5 -80 C 80 -40 40 -80 0 -160 Z" fill="url(#vbAmber2)" />
+    <path d="M 0 -160 C 40 -80 80 -40 138.5 -80 A 160 160 0 0 1 160 0 C 80 0 80 -80 0 -160 Z" fill="url(#vbWhite2)" />
+    <path d="M 160 0 A 160 160 0 0 1 80 138.5 C 40 80 80 40 160 0 Z" fill="url(#vbBlue2)" />
+    <path d="M 160 0 C 80 40 40 80 80 138.5 A 160 160 0 0 1 0 160 C 0 80 80 80 160 0 Z" fill="url(#vbAmber2)" />
+    <path d="M 0 160 A 160 160 0 0 1 -138.5 80 C -80 40 -40 80 0 160 Z" fill="url(#vbWhite2)" />
+    <path d="M 0 160 C -40 80 -80 40 -138.5 80 A 160 160 0 0 1 -160 0 C -80 0 -80 80 0 160 Z" fill="url(#vbBlue2)" />
+    <path d="M -160 0 A 160 160 0 0 1 -80 -138.5 C -40 -80 -80 -40 -160 0 Z" fill="url(#vbAmber2)" />
+    <path d="M -160 0 C -80 -40 -40 -80 -80 -138.5 A 160 160 0 0 1 0 -160 C 0 -80 -80 -80 -160 0 Z" fill="url(#vbWhite2)" />
+    <circle r="160" fill="none" stroke="#0f172a" stroke-width="10" />
+    <path d="M -160 0 C -40 0 0 -40 0 -160" fill="none" stroke="#0f172a" stroke-width="8" stroke-linecap="round" />
+    <path d="M 0 -160 C 0 -40 40 0 160 0" fill="none" stroke="#0f172a" stroke-width="8" stroke-linecap="round" />
+    <path d="M 160 0 C 40 0 0 40 0 160" fill="none" stroke="#0f172a" stroke-width="8" stroke-linecap="round" />
+    <path d="M 0 160 C 0 40 -40 0 -160 0" fill="none" stroke="#0f172a" stroke-width="8" stroke-linecap="round" />
+  </g>
+</svg>

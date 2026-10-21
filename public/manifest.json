@@ -1,0 +1,24 @@
+{
+  "name": "VoliBareng — Jadwal Main Voli",
+  "short_name": "VoliBareng",
+  "description": "Aplikasi Pengelola Jadwal Main Voli, Kehadiran, dan Pengingat Komunitas",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B132B",
+  "theme_color": "#1C2541",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
