@@ -3,36 +3,15 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { createServer as createViteServer } from 'vite';
-import { apiRouter } from './src/server/routes';
-import { db } from './src/server/db';
+import { createApp } from './src/server/app';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 async function startServer() {
-  // Initialize Neon PostgreSQL database connection & tables
-  await db.initPostgres();
-
-  const app = express();
+  const app = createApp();
   const PORT = Number(process.env.PORT) || 3000;
   const isProd = process.env.NODE_ENV === 'production';
-
-  app.use(express.json());
-
-  // Mount API router
-  app.use('/api', apiRouter);
-
-  // Background automated scheduler runner (runs every 30 seconds)
-  setInterval(() => {
-    try {
-      const res = db.runSchedulerNow(false);
-      if (res.processedCount > 0) {
-        console.log(`[Scheduler] Otomatis memproses ${res.processedCount} pengingat voli.`);
-      }
-    } catch (e) {
-      console.error('[Scheduler] Error running background check:', e);
-    }
-  }, 30000);
 
   if (!isProd) {
     const vite = await createViteServer({
